@@ -22,6 +22,8 @@ import { Card, CardImg, CardText, CardBody,
 
     function RenderComments({comments}) {
       //return (<div>test</div>)
+      console.log("test : " + comments)
+      
       const listItems = comments.map(
       (comment) => {
         return (
@@ -42,6 +44,7 @@ import { Card, CardImg, CardText, CardBody,
     }
 
     const DishDetail = (props) => {
+      
       if(props.dish != null)
       {
         return (
@@ -51,7 +54,7 @@ import { Card, CardImg, CardText, CardBody,
                   <RenderDish dish={props.dish}></RenderDish>
                 </div>
                 <div className="col-12 col-md-5 m-1">
-                  <RenderComments comments={props.dish.comments}></RenderComments>
+                  <RenderComments comments={props.comments}></RenderComments>
                 </div>
               </div>
           </div>
