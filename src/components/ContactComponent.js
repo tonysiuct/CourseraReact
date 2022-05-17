@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
+import { Button, Label, Col, Row} from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
 const required = (val) => val && val.length;
@@ -17,7 +17,7 @@ class Contact extends Component {
             lastname: '',
             telnum: '',
             email: '',
-            agree: false,
+            Modalagree: false,
             contactType: 'Tel.',
             message: '',
             touched: {
@@ -123,7 +123,7 @@ class Contact extends Component {
                    </div>
                     <div className="col-12 col-md-9">
                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
-                        <Row className="form-group">
+                            <Row className="form-group">
                                 <Label htmlFor="firstname" md={2}>First Name</Label>
                                 <Col md={10}>
                                     <Control.text model=".firstname" id="firstname" name="firstname"

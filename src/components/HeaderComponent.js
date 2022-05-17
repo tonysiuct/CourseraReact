@@ -68,7 +68,7 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
-                <div class="container-fluid text-sm-center p-5 bg-light">
+                <div className="container-fluid text-sm-center p-5 bg-light">
                     <div className="container">
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">
